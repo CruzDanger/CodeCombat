@@ -19,7 +19,7 @@ def onDefeat(event):
     # Set y to unit.pos.y, plus a number between -5 and 5
     y = unit.pos.y +game.randomInteger(-5,5)
     # Spawn a "gold-coin" at x, y
-    hero.spawnXY("gold-coin", x, y)
+    game.spawnXY("gold-coin", x, y)
 
 game.setActionFor("munchkin", "spawn", onSpawn)
 game.setActionFor("munchkin", "defeat", onDefeat)
